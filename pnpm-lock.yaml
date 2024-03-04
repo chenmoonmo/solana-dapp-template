@@ -26,6 +26,12 @@ dependencies:
   '@solana/web3.js':
     specifier: ^1.90.1
     version: 1.90.1
+  '@tanstack/react-query':
+    specifier: ^5.24.7
+    version: 5.24.7(react@18.2.0)
+  '@tanstack/react-query-next-experimental':
+    specifier: ^5.24.7
+    version: 5.24.7(@tanstack/react-query@5.24.7)(next@14.1.1)(react@18.2.0)
   jotai:
     specifier: ^2.7.0
     version: 2.7.0(@types/react@18.2.61)(react@18.2.0)
@@ -3687,6 +3693,31 @@ packages:
     resolution: {integrity: sha512-E4KcWTpoLHqwPHLxidpOqQbcrZVgi0rsmmZXUle1jXmJfuIf/UWpczUJ7MZZ5tlxytgJXyp0w4PGkkeLiuIdZw==}
     dependencies:
       tslib: 2.6.2
+    dev: false
+
+  /@tanstack/query-core@5.24.7:
+    resolution: {integrity: sha512-24d9o44FktHTgTOu3XdQWXMu24SJodmzGWXfvd9gT57ijarjOsN2cUyg/RqyCzuDTfD59+1QdCfPB4QvRRsCjw==}
+    dev: false
+
+  /@tanstack/react-query-next-experimental@5.24.7(@tanstack/react-query@5.24.7)(next@14.1.1)(react@18.2.0):
+    resolution: {integrity: sha512-EmpCeW5c3O+P1ABDkBlysYlWezEeSpNVnVgulgvfnJMbUngemr+yU+x93EG77AojEOlmYjoAmZIt0IctDxWuig==}
+    peerDependencies:
+      '@tanstack/react-query': ^5.24.7
+      next: ^13 || ^14
+      react: ^18.0.0
+    dependencies:
+      '@tanstack/react-query': 5.24.7(react@18.2.0)
+      next: 14.1.1(@babel/core@7.24.0)(react-dom@18.2.0)(react@18.2.0)
+      react: 18.2.0
+    dev: false
+
+  /@tanstack/react-query@5.24.7(react@18.2.0):
+    resolution: {integrity: sha512-+yO1UuXeh47/mnegBZcgwqRrxcXiOYkUSMdk69FsNKtPzH7PFFRXLdkyWk/cu6eEc0Zc8g9Skgu26oqEYWTxpQ==}
+    peerDependencies:
+      react: ^18.0.0
+    dependencies:
+      '@tanstack/query-core': 5.24.7
+      react: 18.2.0
     dev: false
 
   /@types/connect@3.4.38:
