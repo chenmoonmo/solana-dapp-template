@@ -8,10 +8,22 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      colors: {
+        system: "#1F2127",
+        secondary: "#9699A3",
+      },
+      borderWidth: {
+        px: "1px",
+      },
+      borderColor: {
+        primary: "#313235",
+      },
+      textColor: {
+        primary: "#e0e0e0",
+        secondary: "#737884",
+      },
+      fontFamily: {
+        poppins: ["Poppins", "sans-serif"],
       },
     },
   },
