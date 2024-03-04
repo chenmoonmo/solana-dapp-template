@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+import { WalletButton } from "./solana-provider";
 
 const Navs = [
   {
@@ -59,7 +59,7 @@ export const Header = () => {
         </div>
       </div>
       <div className="flex items-center gap-3">
-        <WalletMultiButton />
+        <WalletButton />
       </div>
     </header>
   );

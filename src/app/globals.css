@@ -10,7 +10,7 @@ body * {
 }
 
 body {
-  @apply min-h-screen bg-system;
+  @apply min-h-screen !bg-system;
 }
 
 body {
