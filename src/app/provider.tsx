@@ -5,6 +5,7 @@ import { SolanaProvider } from "@/components/solana-provider";
 import { ClusterProvider } from "@/components/cluster-data-access";
 import { ReactQueryStreamedHydration } from "@tanstack/react-query-next-experimental";
 import { QueryClientProvider, QueryClient } from "@tanstack/react-query";
+import { ThemeProvider } from "next-themes";
 
 export const Provider: FC<{
   children: ReactNode;
@@ -16,9 +17,11 @@ export const Provider: FC<{
       <ReactQueryStreamedHydration>
         <ClusterProvider>
           <SolanaProvider>
-            <Theme appearance="dark" accentColor="blue">
-              {children}
-            </Theme>
+            <ThemeProvider attribute="class">
+              <Theme appearance="dark" accentColor="blue">
+                {children}
+              </Theme>
+            </ThemeProvider>
           </SolanaProvider>
         </ClusterProvider>
       </ReactQueryStreamedHydration>
